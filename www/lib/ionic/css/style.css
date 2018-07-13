@@ -6,4 +6,24 @@
 .btn-color {
   color: white;
   background-color: #3e2ece;
+
 }
+
+  .btn-color:hover {
+    color: white;
+    background-color:darkgreen;
+    display: block;
+  }
+
+  .all-buttons{
+    margin: 50px;
+  }
+
+  h1{
+    padding: 40px;
+    text-align:center;
+  }
+
+  a{
+    text-decoration-style: none;
+  }

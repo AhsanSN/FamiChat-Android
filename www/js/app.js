@@ -1,6 +1,6 @@
-angular.module('todo', ['ionic'])
+angular.module('homeMenu', ['ionic'])
 
-  .controller('TodoCtrl', function ($scope, $ionicModal, $a = "a") {
+  .controller('homeMenuCtrl', function ($scope, $ionicModal, $a = "a") {
 
     //used as database for your data
     $scope.tasks = [

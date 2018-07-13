@@ -7,30 +7,21 @@
 
 
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="lib/ionic/css/style.css" rel="stylesheet">
 
-  <script src="lib/ionic/js/ionic.bundle.js"></script>
-
-  <script src="js/app.js"></script>
-  <!-- Needed for Cordova/PhoneGap (will be a 404 during development) -->
-  <script src="cordova.js"></script>
 </head>
-<body ng-app="todo" ng-controller="TodoCtrl">
+<body ng-app="homeMenu">
   <ion-side-menus>
 
-    <!-- Center content -->
+    <ion-side-menu-content class="background-color">
 
-    <!-- add item -->
-    <ion-side-menu-content>
-      
-        <button class="button button-block button-positive">Start Chat</button>
-
+      <button class="button button-block btn-color">Start Chat</button>
 
     </ion-side-menu-content>
 
-    <!--creating new-task.html -->
-    
-
-
   </ion-side-menus>
 </body>
+<script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="js/app.js"></script>
+<script src="cordova.js"></script>
 </html>

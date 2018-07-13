@@ -1,7 +1,7 @@
 {
-  "name": "FamiChat",
+  "name": "Survival_Android",
   "version": "0.0.1",
-  "description": "A video group chatting android app for families and friends.",
+  "description": "An Ionic project",
   "devDependencies": {
     "gulp": "^3.5.6",
     "gulp-clean-css": "^3.7.0",

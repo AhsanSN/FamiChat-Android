@@ -9,7 +9,7 @@ angular.module('homeMenu', ['ionic'])
 
     $scope.toChat = function () {
       console.log("tochat")
-      window.location = "/pages/chat.html?room=test"
+      window.location = "/pages/chat.html?room=7860"
     }
 
   })

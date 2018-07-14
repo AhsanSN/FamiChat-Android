@@ -5,7 +5,7 @@
   <title>Todo Android App</title>
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-
+  <link href="https://fonts.googleapis.com/css?family=Biryani" rel="stylesheet">
   <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link href="lib/ionic/css/style.css" rel="stylesheet">
 
@@ -15,9 +15,11 @@
 
     <ion-side-menu-content class="background-color">
 
-      <h1>FamiChat</h1>
+      <h1 style="font-family: 'Biryani', sans-serif;">FamiChat</h1>
       <div class="all-buttons">
-          <button class="button button-block btn-color" ng-click="toChat();">Start Chat</button>
+          <button class="button button-block btn-color" ng-click="toChat();">Re-Start Chat</button>
+          <button class="button button-block btn-color" ng-click="createRoom();">New Chat</button>
+          <button class="button button-block btn-color" ng-click="joinRoom();">Join Chat</button>
           <button class="button button-block btn-color" ng-click="quitApp();">Quit</button>
       </div>
     </ion-side-menu-content>

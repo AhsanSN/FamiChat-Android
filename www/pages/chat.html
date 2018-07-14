@@ -1,86 +1,49 @@
 <!DOCTYPE html>
-<!--
- *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
- *
- *  Use of this source code is governed by a BSD-style license
- *  that can be found in the LICENSE file in the root of the source
- *  tree.
--->
 <html>
 <head>
-
-  <meta charset="utf-8">
-  <meta name="description" content="WebRTC code samples">
-  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
-  <meta itemprop="description" content="Client-side WebRTC code samples">
-  <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png">
-  <meta itemprop="name" content="WebRTC code samples">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta id="theme-color" name="theme-color" content="#ffffff">
-
-  <base target="_blank">
-
-  <title>Peer connection</title>
-
-  <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png">
-  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="../css/chat1.css" />
-  <link rel="stylesheet" href="../css/chat.css" />
-
+  <title>vchat - a simple video chat app</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
-
 <body>
+  <div class="container">
+    <header>
+      <h1><a href="/">vchat</a></h1>
+      <h2><a href="/">a simple video chat app</a></h2>
+    </header>
 
-  <div id="container">
+    <div id="okta-login-container"></div>
 
-    <div class="highlight">
-      <p>
-        New codelab: <a href="https://codelabs.developers.google.com/codelabs/webrtc-web">
-          Realtime communication with
-          WebRTC
-        </a>
-      </p>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-md-auto align-self-center">
+        <p id="login">
+          <b>NOTE</b>: You are not currently logged in. If you'd like to start your own
+          chat room please <button type="button" class="btn btn-light">log in</button>
+        </p>
+        <div id="url" class="alert alert-dark" role="alert">
+          <span id="roomIntro">ROOM URL</span>: <span id="roomUrl"></span>
+        </div>
+      </div>
+      <div class="col"></div>
     </div>
 
-    <h1>
-      <a href="//webrtc.github.io/samples/" title="WebRTC samples homepage">WebRTC samples</a>
-      <span>Peer connection</span>
-    </h1>
-
-    <video id="localVideo" autoplay muted></video>
-    <video id="remoteVideo" autoplay></video>
-
-    <div>
-      <button id="startButton">Start</button>
-      <button id="callButton">Call</button>
-      <button id="hangupButton">Hang Up</button>
+    <div id="remotes" class="row">
+      <div class="col-md-6">
+        <div class="videoContainer">
+          <video id="selfVideo"></video>
+          <meter id="localVolume" class="volume"></meter>
+        </div>
+      </div>
     </div>
-
-    <p>
-      View the console to see logging. The <code>MediaStream</code> object <code>localStream</code>, and the <code>RTCPeerConnection</code>
-      objects <code>pc1</code> and <code>pc2</code> are in global scope, so you can inspect them in the console as
-      well.
-    </p>
-
-    <p>
-      For more information about RTCPeerConnection, see <a href="http://www.html5rocks.com/en/tutorials/webrtc/basics/"
-                                                           title="HTML5 Rocks article about WebRTC by Sam Dutton">
-        Getting
-        Started With WebRTC
-      </a>.
-    </p>
-
-
-    <a href="https://github.com/webrtc/samples/tree/gh-pages/src/content/peerconnection/pc1"
-       title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
-
   </div>
 
-  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-  <script src="/js/chatJs/online.js"></script>
-  <script src="/js/chatJs/common.js"></script>
-  <script src="/js/chatJs/ga.js"></script>
-  <script src="/js/chatJs/main.js"></script>
-
+  <footer>
+    <p>
+      Hacked together by <a href="https://twitter.com/rdegges">@rdegges</a>
+      and <a href="https://twitter.com/oktadev">@oktadev</a>.
+    </p>
+  </footer>
 </body>
 </html>

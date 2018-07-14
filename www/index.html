@@ -35,18 +35,27 @@
   <div class="modal">
 
     <!-- Modal header bar -->
-    <ion-header-bar class="bar-secondary">
-      <button class="button button-clear button-positive" ng-click="closeChatModal()">Cancel</button>
-    </ion-header-bar>
 
-    <!-- Modal content area -->
-    <ion-content>
+      <ion-header-bar class="bar-secondary">
+        <h1 class="title"> </h1>
+        <button class="button button-clear button-positive" ng-click="closeChatModal()">Cancel</button>
+      </ion-header-bar>
 
+      <!-- Modal content area -->
+      <ion-content>
         <div class="padding">
           <button class="button button-block button-positive" ng-click="toChat()">Start New Chat</button>
         </div>
 
-    </ion-content>
+        <hr style="color: #ddd; background-color: blue; border: 0.5px solid #ddd;"/>
+        <h2 class="title" style="text-align:center; margin-top: 10px;">Previous Chats</h2>
+        <div>
+          <div class="padding">
+            <button class="button button-block button-positive" ng-click="toChat()">Start New Chat</button>
+          </div>
+        </div>
+
+      </ion-content>
 
   </div>
 

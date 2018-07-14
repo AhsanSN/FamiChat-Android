@@ -4,6 +4,7 @@
 }
 
 .btn-color {
+  max-width: 300px;
   color: white;
   background-color: #3e2ece;
 
@@ -11,7 +12,8 @@
 
   .btn-color:hover {
     color: white;
-    background-color:darkgreen;
+    max-width: 300px;
+    background-color: darkgreen;
     display: block;
   }
 

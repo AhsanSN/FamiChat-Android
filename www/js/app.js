@@ -12,5 +12,9 @@ angular.module('homeMenu', ['ionic'])
       console.log("quit")
     };
 
+    $scope.toChat = function () {
+      console.log("tochat")
+      window.location = "asd"
+    }
 
   })

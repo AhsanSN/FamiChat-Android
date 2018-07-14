@@ -12,4 +12,14 @@ angular.module('homeMenu', ['ionic'])
       window.location = "/pages/chat.html?room=7860"
     }
 
+    $scope.createRoom = function () {
+      console.log("createRoom")
+      window.location = "/pages/chat.html?room=7860"
+    }
+    
+    $scope.JoinRoom = function () {
+      console.log("JoinRoom")
+      window.location = "/pages/chat.html?room=7860"
+    }
+
   })

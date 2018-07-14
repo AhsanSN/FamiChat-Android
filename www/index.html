@@ -10,17 +10,18 @@
   <link href="lib/ionic/css/style.css" rel="stylesheet">
 
 </head>
-<body ng-app="homeMenu">
+<body ng-app="homeMenu" ng-controller="homeMenuCtrl">
   <ion-side-menus>
 
     <ion-side-menu-content class="background-color">
 
       <h1>FamiChat</h1>
       <div class="all-buttons">
-      <button class="button button-block btn-color">Start Chat</button>
-      <a href="asd"
-      <button class="button button-block btn-color">Quit</button>
-        </div>
+        <a href="startChat.html">
+          <button class="button button-block btn-color">Start Chat</button>
+        </a>
+            <button class="button button-block btn-color" ng-click="quitApp();">Quit</button>
+      </div>
     </ion-side-menu-content>
 
   </ion-side-menus>

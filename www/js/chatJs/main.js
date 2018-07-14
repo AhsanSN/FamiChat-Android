@@ -13,7 +13,7 @@ const callButton = document.getElementById('callButton');
 const hangupButton = document.getElementById('hangupButton');
 callButton.disabled = true;
 hangupButton.disabled = true;
-startButton.onclick = start;
+start();
 callButton.onclick = call;
 hangupButton.onclick = hangup;
 

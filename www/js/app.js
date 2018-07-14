@@ -14,7 +14,7 @@ angular.module('homeMenu', ['ionic'])
 
     $scope.toChat = function () {
       console.log("tochat")
-      window.location = "asd"
+      window.location = "/pages/chat.html"
     }
 
   })

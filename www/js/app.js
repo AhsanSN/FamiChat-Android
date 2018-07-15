@@ -22,6 +22,11 @@ angular.module('homeMenu', ['ionic'])
       $scope.taskModal.show();
     }
 
+     $scope.joinRoom = function () {
+      console.log("joinRoom modal")
+      $scope.taskModal.show();
+    }
+
     $scope.toChat = function () {
       console.log("tochat")
       window.location = "/pages/chat.html?room=7860"
@@ -39,25 +44,6 @@ angular.module('homeMenu', ['ionic'])
        
   })
 
-  .controller('joinRoomCtrl', function ($scopeJoinRoom, $ionicModal) {
-
-    $ionicModal.fromTemplateUrl('JoinRoom.html', function (modal) {
-            console.log("JoinRoom")
-
-    $scopeJoinRoom.taskModal = modal;
-    }, {
-        scope: $scopeJoinRoom,
-        animation: 'slide-in-up'
-    });
-
-    $scopeJoinRoom.joinRoom = function () {
-      console.log("JoinRoom.html loaded")
-      $scopeJoinRoom.taskModal.show();
-    }
-
-
-
-  })
 
 
 

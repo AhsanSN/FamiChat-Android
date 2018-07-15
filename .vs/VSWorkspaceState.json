@@ -3,13 +3,12 @@
     "",
     "\\www",
     "\\www\\js",
-    "\\www\\lib",
     "\\www\\lib\\ionic",
     "\\www\\lib\\ionic\\css",
     "\\www\\pages",
     "\\www\\pages\\static",
     "\\www\\pages\\static\\css"
   ],
-  "SelectedNode": "\\www\\pages\\chat.html",
+  "SelectedNode": "\\www\\js\\app.js",
   "PreviewInSolutionExplorer": false
 }

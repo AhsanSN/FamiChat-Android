@@ -20,11 +20,15 @@ angular.module('homeMenu', ['ionic'])
     $scope.toChatModal = function () {
       console.log("tochat modal")
       $scope.taskModal.show();
+      document.getElementById('toChatDiv').style.display = 'block';
+      document.getElementById('joinRoomDiv').style.display = 'none';
     }
 
      $scope.joinRoom = function () {
       console.log("joinRoom modal")
       $scope.taskModal.show();
+      document.getElementById('toChatDiv').style.display = 'none';
+      document.getElementById('joinRoomDiv').style.display = 'block';
     }
 
     $scope.toChat = function () {

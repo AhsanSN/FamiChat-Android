@@ -1,3 +1,4 @@
+
 //get camera permission
 if (navigator.getUserMedia) {
   // Request the camera.
@@ -107,7 +108,6 @@ angular.module('homeMenu', ['ionic'])
 
     // Inefficient, but save all the projects
     Projects.save($scope.projects);
-
     task.title = "";
   };
 
@@ -168,4 +168,25 @@ angular.module('homeMenu', ['ionic'])
     }
     
 })
+
+
+
+
+
+
+
+
+import { AndroidPermissions } from '@ionic-native/android-permissions';
+
+
+
+this.androidPermissions.checkPermission(this.androidPermissions.PERMISSION.CAMERA).then(
+  result => console.log('Has permission?',result.hasPermission),
+  err => this.androidPermissions.requestPermission(this.androidPermissions.PERMISSION.CAMERA)
+);
+
+
+
+
+
 

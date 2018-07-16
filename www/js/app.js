@@ -89,7 +89,7 @@ angular.module('homeMenu', ['ionic'])
 
     task.title = "";
   };
-  
+
 
     // quit app
     $scope.quitApp = function () {
@@ -112,6 +112,7 @@ angular.module('homeMenu', ['ionic'])
 
     $scope.toChat = function () {
       console.log("tochat")
+      createProject("projectTitle");
       window.location = "/pages/chat.html?room=7860"
     }
 

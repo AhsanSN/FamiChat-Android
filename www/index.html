@@ -38,7 +38,7 @@
     <!-- Modal header bar -->
 
       <ion-header-bar class="bar-secondary">
-        <h1 class="title"> </h1>
+        <h1 class="title" style="padding: 0px;"> </h1>
         <button class="button button-clear button-positive" ng-click="closeChatModal()">Cancel</button>
       </ion-header-bar>
 
@@ -52,9 +52,13 @@
         <hr style="color: #ddd; background-color: blue; border: 0.5px solid #ddd;"/>
         <h2 class="title" style="text-align:center; margin-top: 10px;">Previous Chats</h2>
         <div>
-          <div class="padding">
-            <button class="button button-block button-positive" ng-click="toChat()">Start New Chat</button>
-          </div>
+          
+          <ion-list>
+        <ion-item ng-repeat="project in projects" ng-click="selectProject(project, $index)" ng-class="{active: activeProject == project}">
+          {{project.title}}
+        </ion-item>
+      </ion-list>
+
         </div>
 
         </div>
@@ -71,12 +75,6 @@
             </div>
           </form>
         </div>
-
-        <ion-list>
-        <ion-item ng-repeat="project in projects" ng-click="selectProject(project, $index)" ng-class="{active: activeProject == project}">
-          {{project.title}}
-        </ion-item>
-      </ion-list>
 
       </ion-content>
 

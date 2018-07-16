@@ -28,7 +28,7 @@ angular.module('homeMenu', ['ionic'])
   }
 })
 
-  .controller('homeMenuCtrl', function ($scope, $ionicModal) {
+  .controller('homeMenuCtrl', function ($scope, $timeout, $ionicModal, Projects, $ionicSideMenuDelegate) {
 
     //storage
 
@@ -64,7 +64,6 @@ angular.module('homeMenu', ['ionic'])
   };
 
 
-
     //my rooms
 
     $ionicModal.fromTemplateUrl('chatModal.html', function (modal) {
@@ -74,6 +73,23 @@ angular.module('homeMenu', ['ionic'])
         scope: $scope,
         animation: 'slide-in-up'
     });
+
+
+    $scope.createTask = function(task) {
+    if(!$scope.activeProject || !task) {
+      return;
+    }
+    $scope.activeProject.tasks.push({
+      title: task.title
+    });
+    $scope.taskModal.hide();
+
+    // Inefficient, but save all the projects
+    Projects.save($scope.projects);
+
+    task.title = "";
+  };
+  
 
     // quit app
     $scope.quitApp = function () {
@@ -124,7 +140,7 @@ angular.module('homeMenu', ['ionic'])
     }
   }, 1000);
 
-     
+
   })
 
 

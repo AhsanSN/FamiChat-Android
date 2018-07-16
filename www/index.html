@@ -64,14 +64,15 @@
         </div>
         <div id="joinRoomDiv">
           <br><br>
-            <form ng-submit="createTask(task)">
+          <h3 class="title" style="padding: 0px; text-align:center;">Join a chat</h3>
+            <form ng-submit="toChat_join(task.title)">
             <div class="list">
               <label class="item item-input">
-                <input type="text" placeholder="What do you need to do?" ng-model="task.title">
+                <input type="text" placeholder="Enter chat number." ng-model="task.title">
               </label>
             </div>
             <div class="padding">
-              <button type="submit" ng-click="newProject()" class="button button-block button-positive">Create Task</button>
+              <button type="submit" class="button button-block button-positive">Join Chat</button>
             </div>
           </form>
         </div>

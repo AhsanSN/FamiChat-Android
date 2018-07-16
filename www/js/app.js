@@ -110,10 +110,15 @@ angular.module('homeMenu', ['ionic'])
       document.getElementById('joinRoomDiv').style.display = 'block';
     }
 
-    $scope.toChat = function () {
+    $scope.toChat = function (room = 7860) {
       console.log("tochat")
-      createProject("projectTitle");
-      window.location = "/pages/chat.html?room=7860"
+      createProject(7860);
+      window.location = "/pages/chat.html?room="+room;
+    }
+
+    $scope.toChat_join = function (room = 7860) {
+      console.log("tochat join")
+      window.location = "/pages/chat.html?room="+room;
     }
 
     $scope.closeChatModal = function () {

@@ -56,15 +56,7 @@ angular.module('homeMenu', ['ionic'])
     }
   };
 
-  // Called to select the given project
-  $scope.selectProject = function(project, index) {
-    $scope.activeProject = project;
-    Projects.setLastActiveIndex(index);
-    $ionicSideMenuDelegate.toggleLeft(false);
-  };
-
-
-    //my rooms
+      //my rooms
 
     $ionicModal.fromTemplateUrl('chatModal.html', function (modal) {
       $scope.taskModal = modal;
@@ -120,6 +112,14 @@ angular.module('homeMenu', ['ionic'])
       console.log("tochat join")
       window.location = "/pages/chat.html?room="+room;
     }
+
+    // Called to select the given project
+  $scope.selectProject = function(project, index) {
+    $scope.activeProject = project;
+    console.log("room selected "+project.title)
+    Projects.setLastActiveIndex(index);
+    $scope.toChat_join(project.title)
+  };
 
     $scope.closeChatModal = function () {
       console.log("hide modal")

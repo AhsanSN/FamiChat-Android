@@ -55,7 +55,7 @@
           
           <ion-list>
         <ion-item ng-repeat="project in projects" ng-click="selectProject(project, $index)" ng-class="{active: activeProject == project}">
-          {{project.title}}
+          <div>{{project.title}}</div>
         </ion-item>
       </ion-list>
 

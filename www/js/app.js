@@ -140,6 +140,11 @@ angular.module('homeMenu', ['ionic'])
 
     $scope.toChat_join = function (room = 7860) {
       console.log("tochat join")
+      console.log(room)
+      //createProject(1123);
+      var newProject = Projects.newProject(room);
+    $scope.projects.push(newProject);
+    Projects.save($scope.projects);
       window.location = "/pages/chat.html?room="+room;
     }
 

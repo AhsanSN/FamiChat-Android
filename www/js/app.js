@@ -131,31 +131,5 @@ angular.module('homeMenu', ['ionic'])
       window.location = "/pages/chat.html?room=7860"
     }
     
-
-
-
-    $timeout(function() {
-    if($scope.projects.length == 0) {
-      while(true) {
-        var projectTitle = prompt('Your first project title:');
-        if(projectTitle) {
-          createProject(projectTitle);
-          break;
-        }
-      }
-    }
-  }, 1000);
-
-
-  })
-
-
-
-
-
-
-
-
-
-
+})
 

@@ -2,7 +2,7 @@
 <widget id="com.anomoz.famichat" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Survival_Android</name>
     <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <author email="sa02908@st.habib.edu.pk" href="https://github.com/ahsanSn">Syed Ahsan Ahmed</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

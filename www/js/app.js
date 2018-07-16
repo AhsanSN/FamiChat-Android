@@ -115,6 +115,7 @@ angular.module('homeMenu', ['ionic'])
     // quit app
     $scope.quitApp = function () {
       console.log("quit")
+      ionic.Platform.exitApp();
     };
 
     $scope.toChatModal = function () {
@@ -143,8 +144,8 @@ angular.module('homeMenu', ['ionic'])
       console.log(room)
       //createProject(1123);
       var newProject = Projects.newProject(room);
-    $scope.projects.push(newProject);
-    Projects.save($scope.projects);
+      $scope.projects.push(newProject);
+      Projects.save($scope.projects);
       window.location = "/pages/chat.html?room="+room;
     }
 

@@ -102,9 +102,10 @@ angular.module('homeMenu', ['ionic'])
       document.getElementById('joinRoomDiv').style.display = 'block';
     }
 
-    $scope.toChat = function (room = 7860) {
+    $scope.toChat = function () {
       console.log("tochat")
-      createProject(7860);
+      var room = Math.floor((Math.random() * 8999) + 999);
+      createProject(room);
       window.location = "/pages/chat.html?room="+room;
     }
 

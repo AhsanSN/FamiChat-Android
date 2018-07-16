@@ -5,6 +5,7 @@
 
 .btn-color {
   max-width: 300px;
+  margin: 10px auto;
   color: white;
   background-color: #3e2ece;
 
@@ -12,6 +13,7 @@
 
   .btn-color:hover {
     color: white;
+    margin: 10px auto;
     max-width: 300px;
     background-color: darkgreen;
     display: block;

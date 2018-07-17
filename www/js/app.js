@@ -1,5 +1,6 @@
 
 //get camera permission
+/**
 if (navigator.getUserMedia) {
   // Request the camera.
   navigator.getUserMedia(
@@ -26,7 +27,7 @@ if (navigator.getUserMedia) {
   alert('Sorry, your browser does not support getUserMedia');
 }
 
-
+**/
 
 angular.module('homeMenu', ['ionic'])
 

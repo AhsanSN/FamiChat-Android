@@ -1,3 +1,4 @@
+
 //get camera permission
 /**
 if (navigator.getUserMedia) {
@@ -108,7 +109,6 @@ angular.module('homeMenu', ['ionic'])
 
     // Inefficient, but save all the projects
     Projects.save($scope.projects);
-
     task.title = "";
   };
 
@@ -169,5 +169,8 @@ angular.module('homeMenu', ['ionic'])
     }
     
 })
+
+
+
 
 

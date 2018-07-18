@@ -1,4 +1,4 @@
-# Todo App (Android)
+# FamiChat App (Android)
 
 An basic Android todo app created using ionic. Contains features of adding new items to the list using a modal.
 
@@ -11,7 +11,8 @@ In order to compile and run the code, follow these steps.
 1) Get ionic (along with all the dependencies, including Cordova)
 2) Open Nodejs CMD and type the following commands.
 3) <code>cd <repository's directory></code>
-  | example: <code>cd C:\Users\Ahsan Ahmed\Documents\GitHub\Todo-Android-App</code>
+  | example: <code>cd C:\Users\Ahsan Ahmed\Documents\GitHub\project-name</code>
+4) <code>npm install</code>
   
   ### On desktop browser
   

@@ -1,6 +1,6 @@
 # FamiChat App (Android)
 
-An basic Android todo app created using ionic. Contains features of adding new items to the list using a modal.
+An video group chatting Android app for family and friends created using ionic. Contains options of creating and joining a chat. You get notified if a member of the group starts a chat. Easy to share urls.
 
 ## Screenshots
  

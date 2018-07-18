@@ -4,6 +4,8 @@ An basic Android todo app created using ionic. Contains features of adding new i
 
 ## Screenshots
 
+Note: These screenshots were taken from desktop browser during development. App screenshots are currently not available.
+
 <table>
   <tbody>
     <tr>

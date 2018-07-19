@@ -3,6 +3,30 @@
 An video group chatting Android app for family and friends created using ionic. Contains options of creating and joining a chat. You get notified if a member of the group starts a chat. Easy to share urls.
 
 ## Screenshots
+
+Note: These screenshots were taken from desktop browser during development. App screenshots are currently not available.
+
+<table>
+  <tbody>
+    <tr>
+      <!-- Video 1 -->
+      <td align="center">
+          <img width="290" alt="FamiChat" src="/screenshots/Screenshot%20(614).png">
+          <br>
+      </td>
+      <!-- Video 2 -->
+      <td align="center">
+          <img width="290" alt="FamiChat" src="/screenshots/Screenshot%20(615).png">
+          <br>
+      </td>
+      <!-- Video 3 -->
+      <td align="center">
+          <img width="290" alt="FamiChat" src="/screenshots/Screenshot%20(616).png">
+          <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
  
 ## Compiling and running the project
 

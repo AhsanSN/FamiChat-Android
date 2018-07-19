@@ -55,3 +55,13 @@ After you have tested and run the code, you can get a <code>.apk</code> file for
 2) After a while, you can find your <code>.apk</code> file here,
 <code>\platforms\android\app\build\outputs\apk\release\app-release-unsigned.apk</code>.
   
+## Signing Apk
+
+1) <code>keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000</code>
+
+if "keytool" is not found, use,
+
+1) <code>"C:\Program Files\Java\jre1.8.0_151\bin\keytool.exe" -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000</code>
+
+2) .keystore file has been generated. To attach it with the unsigned apk, use a "OutSign" software.
+

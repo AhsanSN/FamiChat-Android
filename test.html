@@ -24,7 +24,16 @@ $m.click(function(){
     if (no!=4){
 	    if (no>4){
 	    	var i, _no = no;
-	    	var _size = size/no * 2;
+	    	if (no%2 == 0)
+	    	{
+	    		console.log("even")
+	    	var _size = (size/no)*2 ;
+	    	}
+	    	else
+	    	{
+	    		console.log("odd")
+	    		var _size = (size/(no+1))*2 ;
+	    	}
 	    }
 	    else{
 	    	var i, _no = no;

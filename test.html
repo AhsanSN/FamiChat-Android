@@ -1,7 +1,7 @@
 <style type="text/css">
 	.main_div {
-    width:180px;
-    height:180px;
+    width:400px;
+    height:600px;
     background-color:#9F0;
 }
 .main_div > div {
@@ -17,11 +17,11 @@
 
 <script type="text/javascript">
 	
-	var no = 1, $m = $(".main_div"), size = 180;
+	var no = 1, $m = $(".main_div"), size = 600;
 
 $m.click(function(){
     no++;
-    var i, _no = no * no, _size = size/no;
+    var i, _no = no, _size = size/no;
     $m.empty();
 
     for(i=0; i<_no; i++)
@@ -30,7 +30,7 @@ $m.click(function(){
             .css('background-color', '#'+Math.floor(Math.random()*16777215).toString(16))
         );
 
-    $m.find('> div').css({ width:_size, height:_size });
+    $m.find('> div').css({ width:400, height:_size });
 
 })
 

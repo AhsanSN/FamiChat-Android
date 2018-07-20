@@ -52,10 +52,6 @@ header {
   object-fit: cover;
   margin: 0 auto;
   padding: 0;
-
-  border: 2px solid;
-  resize: both;
-  overflow: auto;
 }
 
   .videoContainer video {
@@ -86,7 +82,3 @@ header {
   margin-bottom: 1em;
 }
 
-.video-resize {
-  resize: both;
-  overflow: auto;
-}

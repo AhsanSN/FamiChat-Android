@@ -1,4 +1,4 @@
-
+var nUsers = 1;
 // Determine the room name and public URL for this chat session.
 function getRoom() {
   var query = location.search && location.search.split("?")[1];
@@ -76,7 +76,10 @@ function loadSimpleWebRTC() {
 
     // When another person joins the chat room, we'll display their video.
     webrtc.on("videoAdded", function (video, peer) {
+
+      nUsers = nUsers + 1;
       console.log("user added to chat", peer);
+      console.log("total users = "+ nUsers)
       var remotes = document.getElementById("remotes");
 
       if (remotes) {

@@ -102,7 +102,7 @@ function loadSimpleWebRTC() {
         vol.max = -20;
         vol.low = -40;
         vol.high = -25;
-        container.appendChild(vol);
+        //container.appendChild(vol);
 
         // Show the connection state.
         if (peer && peer.pc) {

@@ -37,6 +37,7 @@ function loadSimpleWebRTC() {
   document.head.appendChild(script);
 
   script.onload = function () {
+    console.log("my")
     var webrtc = new SimpleWebRTC({
       localVideoEl: "selfVideo",
       // the id/element dom element that will hold remote videos

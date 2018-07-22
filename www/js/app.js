@@ -1,34 +1,3 @@
-
-//get camera permission
-/**
-if (navigator.getUserMedia) {
-  // Request the camera.
-  navigator.getUserMedia(
-    // Constraints
-    {
-      video: true,
-      audio: true
-    },
-
-    // Success Callback
-    function(localMediaStream) {
-      console.log('permission given');
-
-    },
-
-    // Error Callback
-    function(err) {
-      // Log the error to the console.
-      console.log('The following error occurred when trying to use getUserMedia: ' + err);
-    }
-  );
-
-} else {
-  alert('Sorry, your browser does not support getUserMedia');
-}
-
-**/
-
 angular.module('homeMenu', ['ionic'])
 
   .factory('Projects', function() {
@@ -137,7 +106,7 @@ angular.module('homeMenu', ['ionic'])
       console.log("tochat")
       var room = Math.floor((Math.random() * 8999) + 999);
       createProject(room);
-      window.location = "/pages/chat.html?room="+room;
+      window.location = "https://naughty-bhabha-908faa.netlify.com/?room="+room;
     }
 
     $scope.toChat_join = function (room = 7860) {
@@ -147,7 +116,7 @@ angular.module('homeMenu', ['ionic'])
       var newProject = Projects.newProject(room);
       $scope.projects.push(newProject);
       Projects.save($scope.projects);
-      window.location = "/pages/chat.html?room="+room;
+      window.location = "https://naughty-bhabha-908faa.netlify.com/?room="+room;
     }
 
     // Called to select the given project
@@ -165,7 +134,7 @@ angular.module('homeMenu', ['ionic'])
 
     $scope.createRoom = function () {
       console.log("createRoom")
-      window.location = "/pages/chat.html?room=7860"
+      window.location = "https://naughty-bhabha-908faa.netlify.com/?room=132"
     }
     
 })

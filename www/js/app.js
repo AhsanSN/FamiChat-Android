@@ -139,7 +139,3 @@ angular.module('homeMenu', ['ionic'])
     
 })
 
-
-
-
-

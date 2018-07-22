@@ -1,3 +1,55 @@
+//testing
+var no = 1, $m = $(".main_div"), size = 600, _width = 400;
+
+$m.click(function(){
+    no++;
+    if (no!=4){
+      if (no>4){
+        var i, _no = no;
+        if (no%2 == 0)
+        {
+          console.log("even")
+        var _size = (size/no)*2 ;
+        }
+        else
+        {
+          console.log("odd")
+          var _size = (size/(no+1))*2 ;
+        }
+      }
+      else{
+        var i, _no = no;
+        var _size = size/no;
+      }
+  }
+    if (no==4){
+      var i, _no = no, _size = size/no * 2;
+      _width = _width/2 
+    }
+    //$m.empty();
+
+    for(i=0; i<_no; i++)
+        $m.append(
+            $("<div title=" +i+ " class= videoContainer id= container_/>").css('background-color', '#'+Math.floor(Math.random()*16777215).toString(16))
+            //$("<div title=" +i+ "class= videoContainer id= container_"+webrtc.getDomId(peer)+"/>").css('background-color', '#'+Math.floor(Math.random()*16777215).toString(16))
+        );
+
+    $m.find('> div').css({ width:_width, height:_size });
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 var nUsers = 1;
 // Determine the room name and public URL for this chat session.
 function getRoom() {
@@ -54,6 +106,7 @@ function loadSimpleWebRTC() {
     // Immediately join room when loaded.
     webrtc.on("readyToCall", function () {
       webrtc.joinRoom(getRoom());
+      console.log("My image has loaded")
     });
 
     function showVolume(el, volume) {
@@ -84,6 +137,7 @@ function loadSimpleWebRTC() {
       var remotes = document.getElementById("remotes");
 
       if (remotes) {
+
         var outerContainer = document.createElement("div");
         outerContainer.className = "col-md-6";
 
@@ -103,7 +157,7 @@ function loadSimpleWebRTC() {
         vol.max = -20;
         vol.low = -40;
         vol.high = -25;
-        //container.appendChild(vol);
+        container.appendChild(vol);
 
         // Show the connection state.
         if (peer && peer.pc) {

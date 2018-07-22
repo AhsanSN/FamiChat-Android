@@ -183,7 +183,7 @@ function loadSimpleWebRTC() {
 
 
 
-
+/**
         var outerContainer = document.createElement("div");
         outerContainer.className = "col-md-6";
 
@@ -191,7 +191,7 @@ function loadSimpleWebRTC() {
         container.className = "videoContainer";
         container.id = "container_" + webrtc.getDomId(peer);
         container.appendChild(video);
-
+**/
         // Suppress right-clicks on the video.
         video.oncontextmenu = function () { return false; };
 

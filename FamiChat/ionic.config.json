@@ -1,0 +1,7 @@
+{
+  "name": "FamiChat",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

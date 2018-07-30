@@ -3,7 +3,7 @@
     <name>FamiChat</name>
     <description>Video chatting app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.0.102:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -85,4 +85,5 @@
     <engine name="android" spec="7.0.0" />
     <engine name="ios" spec="4.5.4" />
     <engine name="browser" spec="5.0.3" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
 </widget>

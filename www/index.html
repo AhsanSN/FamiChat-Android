@@ -81,7 +81,24 @@
 
 
   </div>
-
 </script>
+
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+constructor(private iab: InAppBrowser) { }
+
+
+<script type="text/javascript">
+  
+  const browser = this.iab.create('https://ionicframework.com/');
+
+browser.on('loadstop').subscribe(event => {
+   browser.insertCSS({ code: "body{color: red;" });
+});
+
+browser.close();
+</script>
+
+
 
 </html>

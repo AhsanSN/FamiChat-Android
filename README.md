@@ -45,7 +45,7 @@ In order to compile and run the code, follow these steps.
   ### On Android Phone
   
   4) Connect your androoid phone to your PC and run the following commands.
-  5) <code>ionic cordova run android</code>
+  5) <code>ionic cordova run android --device --livereload</code>
   
 ## Building an apk
 

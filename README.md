@@ -47,6 +47,11 @@ In order to compile and run the code, follow these steps.
   4) Connect your androoid phone to your PC and run the following commands.
   5) <code>ionic cordova run android --device --livereload</code>
   
+  ### On Netlify
+  
+  command: <code>npm run build</code>
+  directory: <code>www</code>
+  
 ## Building an apk
 
 After you have tested and run the code, you can get a <code>.apk</code> file for the project by running the following command.

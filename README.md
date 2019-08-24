@@ -70,3 +70,7 @@ if "keytool" is not found, use,
 
 2) .keystore file has been generated. To attach it with the unsigned apk, use a "OutSign" software.
 
+### Find JDK
+
+<code>C:\Program Files\Java\jdk1.8.0_144\bin</code>
+

@@ -74,3 +74,9 @@ if "keytool" is not found, use,
 
 <code>C:\Program Files\Java\jdk1.8.0_144\bin</code>
 
+### Solution to  openssl config failed: error:02001003:system library:fopen:No such process
+```
+set OPENSSL_CONF=c:\dummy  
+
+set OPENSSL_CONF=
+```

@@ -66,7 +66,7 @@ After you have tested and run the code, you can get a <code>.apk</code> file for
 
 if "keytool" is not found, use,
 
-1) <code>"C:\Program Files\Java\jre1.8.0_151\bin\keytool.exe" -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000</code>
+1) <code>"C:\Program Files\Java\jre1.8.0_241\bin\keytool.exe" -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000</code>
 
 2) .keystore file has been generated. To attach it with the unsigned apk, use a "OutSign" software.
 
